@@ -1,0 +1,20 @@
+<ion-side-menus>
+
+  <ion-side-menu-content>
+  	<ng-include src="&apos;src/header/header.html&apos;" ng-controller="HeaderCtrl"></ng-include>
+  	<ng-include src="'src/tabs/tabs.html'" ng-controller="HeaderCtrl"></ng-include>
+  </ion-side-menu-content>
+
+  <!-- Right menu -->
+  <ion-side-menu side="right">
+  <div class="padding">
+	  <h2>Menu</h2>
+	  <a class="button button-icon icon ion-ionic"></a>Ionic Places 
+	  <hr>
+	  <button class="button button-block button-assertive" ui-sref="login">
+	  Log out
+	  </button>
+	</div>
+  </ion-side-menu>
+
+</ion-side-menus>
