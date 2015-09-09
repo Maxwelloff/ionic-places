@@ -1,5 +1,9 @@
-<ion-view>
-  <ion-content class="has-header">
-      Around me
-  </ion-content>
+<ion-view ng-controller="MapCtrl">
+	<ion-content scroll="false" class="has-header">
+	    <map on-create="mapCreated(map)"></map>
+	</ion-content>
+	<ion-footer-bar class="bar-stable">
+      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>
+      Localize me
+    </ion-footer-bar>
 </ion-view>
