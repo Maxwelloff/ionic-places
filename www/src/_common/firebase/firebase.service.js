@@ -1,13 +1,23 @@
 angular.module('places').factory("FirebaseService", function ($firebaseAuth) {
 
-	var ref = new Firebase('https://ionic-places.firebaseio.com/');
+	var ref = new Firebase('https://ionic-places-maxwell.firebaseio.com/');
 	var auth = $firebaseAuth(ref);
 
 	return {
 
 		login: function (email,password) {
-
-			//log with email and password
+			
+ 				var promise = auth.$authWithPassword({
+                    email: email, 
+                    password: password
+                }).then(function(){
+                    console.log('Login successful');
+                    return promise;
+                }).catch(function(error) {
+                    console.log("Authentication failed:", error);
+                    return promise;
+                });
+                return promise;
 		},
 
 		signUp: function (email, password) {
@@ -23,7 +33,15 @@ angular.module('places').factory("FirebaseService", function ($firebaseAuth) {
 
 			return promise;
 
+		},
+
+		logOut: function (){
+			auth.$unauth;
+			console.log("logouuuut");
+			$state.go('tab.login');
 		}
+
+
 	}
 
 });
