@@ -38,6 +38,20 @@ angular.module('places')
 					}
 				}
 			})
+			.state('tab.my-place-id', {
+				url: '/my-place/:id',
+				data:{
+					title:"My place id"
+				},
+				views: {
+					'tab-my-place-id': {
+						templateUrl: 'src/places/mines/place.html',
+						controller:function ($scope,list){
+							$scope.list = list;
+						}
+					}
+				}
+			})
 			.state('tab.add-place', {
 				url: '/add-place',
 				data:{
@@ -45,7 +59,8 @@ angular.module('places')
 				},
 				views: {
 					'tab-add-place': {
-						templateUrl: 'src/places/add/add-place.html'
+						templateUrl: 'src/places/add/add-place.html',
+						controller:'AddPlaceCtrl'
 					}
 				}
 			})

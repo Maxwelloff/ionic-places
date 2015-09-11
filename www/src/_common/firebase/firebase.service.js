@@ -1,6 +1,6 @@
 angular.module('places').factory("FirebaseService", function ($firebaseAuth) {
 
-	var ref = new Firebase('https://ionic-places.firebaseio.com/');
+	var ref = new Firebase('https://ionic-places-maxwell.firebaseio.com/');
 	var auth = $firebaseAuth(ref);
 
 	return {

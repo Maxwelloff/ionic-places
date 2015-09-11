@@ -5,49 +5,49 @@ angular.module('places')
 
 		var list =[
 			{
-				name:'geneva',
+				name:'Bar des Robots',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/1'
+				image:'http://lorempicsum.com/futurama/627/200/1'
 			},
 			{
-				name:'geneva',
+				name:'Restaurant des Robots',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/2'
+				image:'http://lorempicsum.com/futurama/627/200/2'
 			},
 			{
-				name:'geneva',
+				name:'Club des Robots',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/3'
+				image:'http://lorempicsum.com/futurama/627/200/3'
 			},
 			{
-				name:'geneva',
+				name:'Android Bar',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/4'
+				image:'http://lorempicsum.com/futurama/627/200/4'
 			},
 			{
-				name:'geneva',
+				name:'An Other Spot',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/5'
+				image:'http://lorempicsum.com/futurama/627/200/5'
 			},
 			{
-				name:'geneva',
+				name:'An Other Spot',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/6'
+				image:'http://lorempicsum.com/futurama/627/200/6'
 			},
 			{
-				name:'geneva',
+				name:'An Other Spot',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/7'
+				image:'http://lorempicsum.com/futurama/627/200/7'
 			},
 			{
-				name:'geneva',
+				name:'An Other Spot',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/8'
+				image:'http://lorempicsum.com/futurama/627/200/8'
 			},
 			{
-				name:'geneva',
+				name:'An Other Spot',
 				description:'Cool place to see with great robots inside',
-				image:'http://lorempicsum.com/futurama/100/100/9'
+				image:'http://lorempicsum.com/futurama/627/200/9'
 			}
 		];
 
