@@ -6,6 +6,7 @@ angular.module('places')
 		//properties
 		$scope.enabled = _isEnabled();
 		$scope.title = _getTitle();
+		$scope.backEnabled = _backEnabled();
 
 		//events
 		$rootScope.$on('$stateChangeSuccess',
@@ -13,12 +14,16 @@ angular.module('places')
 
 				$scope.title = _getTitle();
 				$scope.enabled = _isEnabled();
-
+				$scope.backEnabled = _backEnabled();
 		});
 
 		//privates
 		function _isEnabled(){
 			return !$state.is("login");
+		};
+
+		function _backEnabled(){
+			return $state.is("tab.my-place-id");
 		};
 
 		function _getTitle(){

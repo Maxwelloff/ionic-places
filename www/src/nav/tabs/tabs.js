@@ -41,14 +41,12 @@ angular.module('places')
 			.state('tab.my-place-id', {
 				url: '/my-place/:id',
 				data:{
-					title:"My place id"
+					title:"My place"
 				},
 				views: {
-					'tab-my-place-id': {
+					'tab-my-place': {
 						templateUrl: 'src/places/mines/place.html',
-						controller:function ($scope,list){
-							$scope.list = list;
-						}
+						controller:'MyPlaceCtrl'
 					}
 				}
 			})

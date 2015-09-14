@@ -14,7 +14,7 @@
  -->  
    <ion-content class="has-header">
     <ion-list>
-        <ion-item back-img="{{item.image}}" ng-repeat="item in list track by $index" ng-style="{'line-height': '100px'}" ui-sref="tab-my-place-id">
+        <ion-item back-img="{{item.image}}" ng-repeat="(key,item) in list track by $index" ng-style="{'line-height': '100px'}" ui-sref="tab.my-place-id({id:key})">
             <h2>{{item.name}}</h2>
             <p>{{item.description}}</p>
         </ion-item>

@@ -1,5 +1,5 @@
 <ion-view>
-   <ion-content class="has-header" ng-controller="MyPlaceCtrl">
+   <ion-content class="has-header">
     <!-- <ion-list>
         <ion-item back-img="{{item.image}}" ng-repeat="item in list track by $index" ng-style="{'line-height': '100px'}" ui-sref="tab-my-place-id">
             <h2>{{item.name}}</h2>
@@ -7,16 +7,16 @@
         </ion-item>
     </ion-list> -->
     <div class="list card">
-      <div class="item item-avatar">
-        <img src="mcfly.jpg">
-        <h2>{{item.name}}</h2>
-        <p>{{item.description}}</p>
+      <div class="padding">
+        <img src="{{list[currentId].image}}" ng-style="{'width': '100%'}">
+        <h2>{{list[currentId].name}}</h2>
+        <p>{{list[currentId].description | limitTo:60}}...</p>
       </div>
 
       <div class="item item-body">
         <img class="full-image" ng-src="{{item.image}}">
         <p>
-          {{item.description}}
+          {{list[currentId].description}}
         </p>
         <p>
           <a href="#" class="subdued">1 Like</a>
@@ -38,6 +38,7 @@
           Share
         </a>
       </div>
+      <br><br>
   </div>
   </ion-content>
   </ion-view>
