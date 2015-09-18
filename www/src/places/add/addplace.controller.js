@@ -16,8 +16,6 @@ angular.module('places')
 		      saveToPhotoAlbum: false
 		    };
 
-		    console.log("yooooloooo");
-
 		    $scope.takePicture = function () {	
 
 			    $cordovaCamera.getPicture(options).then(function(imageData) {
