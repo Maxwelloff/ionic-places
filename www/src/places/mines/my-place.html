@@ -1,17 +1,28 @@
 <ion-view>
-    <!-- <ion-content class="has-header">
+    <ion-content class="has-header">
         <div class="list">
             <a class="item item-thumbnail-left"
-               collection-repeat="item in list track by $index"
+               ng-repeat="(key,item) in list track by $index"
                collection-item-height="100"
-               collection-item-width="'100%'">
-                <img ng-src="{{item.image}}">
-                <h2>{{item.name}} {{$index}}</h2>
+               collection-item-width="'100%'" ui-sref="tab.my-place-id({id:key})">
+                <img ng-src="data:image/jpeg;base64,{{item.image}}">
+                <h2>{{item.name}}</h2>
                 <p>{{item.description}}</p>
             </a>
         </div>
     </ion-content>
- -->  
+  
+   <!-- 
+
+  ********************
+
+  le code utilisé ci-dessous permettait un affichage en background de l'image pour chaque lieu mais comme les images sont stockées en base64 il devenait difficile de les afficher sachant qu'il faut utiliser : 
+  <img src="data:image/jpeg;base64, **** chaine encodée *** "/>
+  et non ma directive back-img 
+
+  ********************
+
+
    <ion-content class="has-header">
     <ion-list>
         <ion-item back-img="{{item.image}}" ng-repeat="(key,item) in list track by $index" ng-style="{'line-height': '100px'}" ui-sref="tab.my-place-id({id:key})">
@@ -19,5 +30,7 @@
             <p>{{item.description}}</p>
         </ion-item>
     </ion-list>
-</ion-content>
+</ion-content> -->
+
+
 </ion-view>
